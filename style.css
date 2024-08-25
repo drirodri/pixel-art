@@ -1,0 +1,113 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: hsl(230, 30%, 85%);
+}
+#title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 4rem;
+}
+
+#color-palette {
+  position: absolute;
+  right: 1%;
+  display: flex;
+  gap: 5px;
+  list-style-type: none;
+  align-items: center;
+}
+#reset-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+svg {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+.color {
+  width: 80px;
+  height: 80px;
+  border: solid 1px black;
+}
+#pixel-board {
+  display: grid;
+}
+div.pixel {
+  width: 40px;
+  height: 40px;
+  border: solid 1px black;
+}
+#clear-board {
+  background-color: powderblue;
+  border: solid thin;
+  border-radius: 4px;
+  padding: 5px;
+  width: 80px;
+}
+#generate-board {
+  background-color: powderblue;
+  border: solid thin;
+  border-radius: 4px;
+  padding: 5px;
+}
+#selection-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  height: 25px;
+  border: solid thin black;
+  border-radius: 8px;
+  text-align: center;
+  font-family: monospace;
+}
+button,
+input,
+label {
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 510;
+}
+
+#generate-board:hover,
+#clear-board:hover {
+  background-color: limegreen;
+}
+
+footer {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  margin-top: auto;
+  text-align: center;
+  color: #262626;
+  position: relative;
+}
+footer ul li {
+  display: inline;
+}
+footer ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
